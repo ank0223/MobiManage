@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+       
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/Xpence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash"
+         android:gravity="center_horizontal" android:layout_marginLeft="50dp" android:layout_marginTop="-25dp" android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="34dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="262dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/username"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="262dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/upper_round"
+            android:ems="10"
+            android:paddingLeft="15dp"
+            android:text="Password"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.11"
+            android:background="@drawable/btn_shape"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/log"
+            android:textSize="15sp"
+            android:width="100dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27"
+            android:src="@drawable/divider" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="109dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:background="@drawable/btn_shape"
+            android:paddingLeft="-10dp"
+            android:text="Create Account"
+            android:textSize="15dp"
+            android:width="150dp" />
+    </LinearLayout>
+
+</LinearLayout>

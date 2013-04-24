@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/spend"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@drawable/heading"
+        android:gravity="center"
+        android:paddingBottom="35dp"
+        android:text="Summary"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Day:"
+            android:textColor="#3F3F3F"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#3F3F3F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/m"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Month:"
+            android:textColor="#3F3F3F"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#3F3F3F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/y"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Year:"
+            android:textColor="#3F3F3F"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#3F3F3F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Total Self Expenses:"
+            android:textColor="#3F3F3F"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#3F3F3F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_width="fill_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Money in debt:"
+            android:textColor="#3F3F3F"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#3F3F3F" />
+    </LinearLayout>
+
+</LinearLayout>

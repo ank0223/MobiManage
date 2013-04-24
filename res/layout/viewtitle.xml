@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_bg">"
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:background="@drawable/heading"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:text="Add Record"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+
+            <EditText
+                android:id="@+id/amounttext"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+
+            <EditText
+                android:id="@+id/titletext"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/users"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+
+            <EditText
+                android:id="@+id/userstext"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tex"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Date:"
+                android:textStyle="bold"
+                android:textColor="#3f3f3f"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <DatePicker
+                android:id="@+id/pickdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notes( Optional):"
+            android:textStyle="bold"
+                android:textColor="#3f3f3f" />
+
+        <EditText
+            android:id="@+id/editt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/addano"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.74"
+                android:textStyle="bold"
+                android:background="@drawable/btn_shape"
+                android:text="Add Another" />
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/btn_shape"
+                android:text="Done" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

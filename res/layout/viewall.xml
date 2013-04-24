@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/heading"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="59dp" >
+
+<TextView
+            android:id="@+id/rec"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Recents"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+             />
+
+
+        
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp" >
+            
+            <Button
+            android:id="@+id/all"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_shape"
+            android:textStyle="bold"
+            android:text="All" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:layout_marginTop="0dp"/>
+            <Button
+            android:id="@+id/credit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_shape"
+            android:textStyle="bold"
+            android:text="Debts" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:layout_marginTop="0dp"/>
+            <Button
+            android:id="@+id/self"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_shape"
+            android:textStyle="bold"
+            android:text="Self" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:layout_marginTop="0dp"/>
+        </LinearLayout>
+
+        
+
+       </LinearLayout> 
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="#3f3f3f" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/erro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" No Recent Items to display. \n Go to Add tab to add expenses."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone"
+        android:textColor="#3f3f3f" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="2dip" >
+
+<!--  Single List Item Design -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/label"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dip"
+    android:textSize="16dip"
+    android:textStyle="bold" 
+    >
+    
+    
+</TextView>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/label1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1dip"
+    android:textSize="16dip"
+    android:textStyle="bold"
+    android:layout_alignParentRight="true" 
+    android:gravity="right"
+    android:layout_marginRight="5dip"
+    android:text=""
+    >
+    </TextView>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/curr"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:padding="1dip"
+    android:textSize="16dip"
+    android:textStyle="bold"
+    android:layout_toLeftOf="@+id/label1" 
+    android:gravity="right"
+    android:text="Rs."
+    android:layout_marginRight="5dip"
+    >
+    
+</TextView>
+<TextView
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        
+        />
+<TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label1"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+         android:layout_alignParentRight="true" 
+    android:gravity="right"
+    android:layout_marginRight="5dip"
+        />
+<Button
+    android:id="@+id/delete"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="0dp"
+    android:layout_alignRight="@+id/curr"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="50dp"
+    android:background="@drawable/delete"
+    android:visibility="gone"
+     />
+
+<TextView
+    android:id="@+id/det"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_below="@+id/detail"
+    android:text="Notes:"
+    android:visibility="gone"
+     />
+
+<EditText
+    android:id="@+id/notes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/det"
+     android:visibility="gone" 
+     android:editable="false"
+     android:enabled="false"
+     android:inputType="text"
+	/>
+
+</RelativeLayout>
